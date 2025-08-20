@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  max-width: 260px;
+  background-color: rgba(17,24,39,0.95);
+  color: #fff;
+  text-align: left;
+  border-radius: 0.5rem;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  white-space: pre-line;
+  font-size: 12px;
+}
+.tooltip:hover .tooltiptext { visibility: visible; }
+body {
+  font-family: 'Satisfy', cursive, sans-serif;
+}
+/* @font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/comicneue/v9/pxiYyp8kv8JHgFVrJJL0aW4.woff2') format('woff2');
+} */
